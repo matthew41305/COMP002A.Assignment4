@@ -3,6 +3,9 @@
 // console.log(min(0, 10)); // will output 0.
 // console.log(min(0, -10)); // will output -10
 
+
+
+
 // 2. Write a function that takes the radius of a circle and outputs it’s approximate circumference (the formula for circumference is 2 *pi * radius, you may use 3.14 for pi).
 // Example Output:
 // Function that calculates the circumference of a circle given its radius
@@ -21,5 +24,16 @@ function calculateCircumference(radius) {
 // console.log(searchString(“q”, “mississippi”)); // will output 0
 
 // Function that returns how many times a character appears in a string
-
+function searchString(character, string) {
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] === character) {
+        count++;
+      }
+    }
+    return count;
+  }
+  // Example Outputs:
+  console.log(searchString("s", "spongebob")); // 1
+  console.log(searchString("p", "penelope")); // 2
   
